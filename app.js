@@ -1,5 +1,5 @@
 var app = {
-  controllers: {
-    itunesCtrl: new ItunesController()
-  }
-} 
+    controllers: {
+        itunesCtrl: new ItunesController()
+    }
+}
