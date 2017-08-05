@@ -8,23 +8,32 @@ function ItunesService() {
         var apiUrl = url + encodeURIComponent(url2);
 
         //changes the button to loading while songs load
-        $('#get-music-button').text('LOADING....');
+        $('#get-music-button').text('Fetching...');
 
+
+        //because we are overwriting this once the songs load, we dont really need to
+        //ret rid of this.
+        $('#songs').innerHTML = "<h2> Please wait... Loading your songs </h2>";
+
+        //so it turns 
         //modifies the objects to reduce the excess data
         return $.getJSON(apiUrl).then(function(response) {
             var songList = response.results.map(function(song) {
                 return {
+
                     title: song.trackName,
                     albumArt: song.artworkUrl60,
                     artist: song.artistName,
                     collection: song.collectionName,
                     price: song.collectionPrice,
-                    preview: song.previewUrl
+                    preview: song.previewUrl,
+
+                    type: song.kind
                 };
-            })
+            });
             //changes button back to GET MUSIC once songs are loaded
             $('#get-music-button').text('GET MUSIC');
             return songList;
-        })
+        });
     }
 }

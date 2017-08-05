@@ -1,5 +1,6 @@
 var app = {
     controllers: {
-        itunesCtrl: new ItunesController()
+        itunesCtrl: new ItunesController(),
+        mediaCtrl: new MediaController()
     }
 }
