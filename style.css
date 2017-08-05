@@ -1,100 +1,106 @@
-.albumart{
-	width: 50%;
-	height: auto;
-	margin: 0 auto;
+.albumart {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
 }
 
 
-.song-body{
-	background-color: #050505;
-	
-}
-.nope{
-	font-family: 'Great Vibes', cursive;
-	text-align: center;
-	font-size: 7vw;
-	color:#050505;
+.song-body {
+    background-color: #050505;
 }
 
-.nope-sub{
-	font-family: 'Great Vibes', cursive;
-	text-align: center;
-	font-size: 4vw;
-	color:#050505;
-}
-.card{
-	background-color: rgba(46,48,46,0.6);
-	box-shadow: 0 0 6px grey;
-	color: #e7e7e7;
-	border: 1px solid grey;
-	text-align: center;
-	margin-left: 2%;
-	margin-right: 2%;
-	margin-top: 5%;
-	min-height: 320px;
+.nope {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 7vw;
+    color: #050505;
 }
 
-.search{
-	text-align: center;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	border-bottom: 3px solid #878271;
+.nope-sub {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 4vw;
+    color: #050505;
 }
+
+.card {
+    background-color: rgba(46, 48, 46, 0.6);
+    box-shadow: 0 0 6px grey;
+    color: #e7e7e7;
+    border: 1px solid grey;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+    min-height: 320px;
+}
+
+.search {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 3px solid #878271;
+}
+
 
 
 /*#1d2120*/
-.search-container{
-	background-image: url('assets/background.jpg');
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center center;
+
+.search-container {
+    background-image: url('assets/background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
+
 
 /*overwrite the bootstrap to fit the theme better*/
 
-.form-control{
-	background-color: rgba(46,48,46,0.6); 
-	border-radius: 0 !important; /*i really hated to do this, but bootstrap... */
-	border: 1px solid grey !important; 
-	/*border: 0 !important; again, this hurt me a little inside.*/
-	text-align: center;
+.form-control {
+    background-color: rgba(46, 48, 46, 0.6);
+    border-radius: 0 !important;
+    /*i really hated to do this, but bootstrap... */
+    border: 1px solid grey !important;
+    /*border: 0 !important; again, this hurt me a little inside.*/
+    text-align: center;
 
-	color:white;
-	/*turns out text-align wont effect the actuall text box object.
+    color: white;
+    /*turns out text-align wont effect the actuall text box object.
 	so plan b has to be applied :( */
+    margin: 0 auto;
 
-	margin: 0 auto;
-
-	margin-bottom: 1%;
+    margin-bottom: 1%;
 }
 
 
 @media (min-width: 768px) {
-	.form-control{
-		/*this will only add to the form control class, not overwrite it 
+    .form-control {
+        /*this will only add to the form control class, not overwrite it 
 		
 
 		this entire portion is because the search box was far to small on sm,md,and xl
 		devices. To rectify this, making the width larger on everything but mobile
 		will force the text box to strech its legs.
 		*/
-
-		width: 70%;
-	}
+        width: 70%;
+    }
 }
 
-.search-btn{
-	border-radius: 0 !important; /*i really hated to do this, but bootstrap... */
-	border: 1px solid grey !important; 
-	background-color: rgba(46,48,46,0.6); 
-	color: white;
+.search-btn {
+    border-radius: 0 !important;
+    /*i really hated to do this, but bootstrap... */
+    border: 1px solid grey !important;
+    background-color: rgba(46, 48, 46, 0.6);
+    color: white;
 }
+
 
 /*active button */
-.search-btn:focus{
-	color:white;
+
+.search-btn:focus {
+    color: white;
 }
 
-.search-btn:hover{
-	color:#e7e7e7; 
+.search-btn:hover {
+    color: #e7e7e7;
 }
